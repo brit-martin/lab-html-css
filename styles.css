@@ -28,3 +28,21 @@ td {
 td .price{
     text-align: end;
 }
+.form-group{
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+}
+.inline-label {
+    display: inline;
+}
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+#container {
+    max-width: 800px;
+    margin: 0px auto;
+    display: center;
+}

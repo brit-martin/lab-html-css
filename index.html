@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <div id="container">
     <header>
        <h1> Order a Smoothiegram</h1>
 
@@ -47,40 +48,55 @@
     </section>
     <section>
     Order Form
-    
+
+    <div class="form-group">
     <label>Your name</label>
     <input type="text" name="sender">
-    
+    </div>
+
+    <div class ="form-group">
     <label>Who are we sending this to?</label>
     <input type="text" name="recipient">
-    
-    
-    <label>Choose a smoothie</label>
-    <select name ="smoothie">
-        <option value="">--Please choose an option--</option>
+    </div>
+
+    <div class ="form-group">
+        <label>Choose a smoothie</label>
+     <select name ="smoothie">
+            <option value="">--Please choose an option--</option>
         <option value="super strawberries delicious">Super Strawberries Delicious</option>
         <option value="white grape ranger">White Grape Ranger</option>
         <option value="blueberry blast">Blueberry Blast</option>
     </select>
+    </div>  
 
+    <div class ="form-group">
     <span>When should we deliver?</span>
         <input type="radio" name="delivery-time" value="asap">
-        <label>As soon as possible</label>
+        <label class="inline-label">As soon as possible</label>
 
         <input type="radio" name="delivery-time" value="am">
-        <label>Morning</label>
+        <label class="inline-label">Morning</label>
 
         <input type="radio" name="delivery-time" value="pm">
-        <label>Afternoon</label>
+        <label class="inline-label">Afternoon</label>
+    </div>
 
+    <div class ="form-group">
     <label>Enter your message</label>
         <textarea name="message"></textarea>
+    </div>    
 
-    <label>Subscribe to our newsletter?</label>
+    <div class ="form-group">
+    <label class="inline-label">Subscribe to our newsletter?</label>
         <input type="checkbox" name="subscribe" value="yes">
+    </div>
 
+    <div class ="form-group">
     <button type="submit">Submit</button>
+    </div>
+
     </section>
     </main>
+    </div>
 </body>
 </html>
